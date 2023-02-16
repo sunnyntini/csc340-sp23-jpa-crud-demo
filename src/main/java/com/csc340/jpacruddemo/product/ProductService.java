@@ -25,4 +25,10 @@ public class ProductService {
     public void deleteProduct(long productId) {
         repo.deleteById(productId);
     }
+
+    void saveProduct(Product product) {
+
+        repo.save(product);
+    }
+
 }
